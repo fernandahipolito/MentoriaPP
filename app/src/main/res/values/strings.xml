@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Projeto Mentoria</string>
+    <string name="first_exercise_lifecycle">Estudando ciclos de vida</string>
 </resources>
