@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Projeto Mentoria</string>
     <string name="first_exercise_lifecycle">Estudando ciclos de vida</string>
+    <string name="second_exercise_textView">Counter</string>
 </resources>
