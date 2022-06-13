@@ -11,6 +11,7 @@ class FirstExerciseActivity : AppCompatActivity() {
         setContentView(R.layout.activity_first_exercise)
         Log.d("ActivityLifecycle", "App em OnCreate")
     }
+
     override fun onStart() {
         super.onStart()
         Log.d("ActivityLifecycle", "App em OnStart")
