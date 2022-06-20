@@ -2,37 +2,36 @@ package com.example.projetomentoria.secondexercise
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 import com.example.projetomentoria.R
-import com.example.projetomentoria.databinding.ActivitySecondExerciseBinding
-
 
 class SecondExerciseActivity : AppCompatActivity() {
-
-    val binding: ActivitySecondExerciseBinding by lazy {
-        ActivitySecondExerciseBinding.inflate(
-            layoutInflater
-        )
-    }
+    lateinit var txtCounter: TextView
+    private lateinit var btnIncrement: Button
+    var number: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_second_exercise)
 
-        setClickListener()
-    }
+        txtCounter = findViewById(R.id.appCompatTextView)
+        btnIncrement = findViewById(R.id.counterButton)
 
-    fun clickCount(): Int {
-        var number = 0
-        with(binding) {
-            number = appCompatTextView.text.toString().toInt()
+        btnIncrement.setOnClickListener {
             number++
+            txtCounter.text = "$number"
         }
-        return number
     }
 
-    private fun setClickListener() {
-        binding.counterButton.setOnClickListener {
-            binding.appCompatTextView.text = clickCount().toString()
-        }
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putInt("counter", number)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        number = savedInstanceState.getInt("counter", 0)
+        txtCounter.text = "$number"
     }
 }
