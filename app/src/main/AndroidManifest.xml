@@ -23,6 +23,10 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".thirdexercise.ThirdExerciseActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".secondexercise.SecondExerciseActivity"
             android:exported="false" />
 
