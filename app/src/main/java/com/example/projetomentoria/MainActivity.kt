@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.example.projetomentoria.databinding.ActivityMainBinding
 import com.example.projetomentoria.exerciseone.FirstExerciseActivity
 import com.example.projetomentoria.secondexercise.SecondExerciseActivity
+import com.example.projetomentoria.thirdexercise.ThirdExerciseActivity
 
 
 class MainActivity : AppCompatActivity() {
@@ -25,6 +26,11 @@ class MainActivity : AppCompatActivity() {
 
             val intent2 = Intent(this, SecondExerciseActivity::class.java)
             startActivity(intent2)
+        }
+
+        binding.appCompatButton3.setOnClickListener {
+            val intent3 = Intent(this,ThirdExerciseActivity::class.java)
+            startActivity(intent3)
         }
     }
 }
