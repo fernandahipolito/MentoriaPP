@@ -6,12 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/appCompatButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Primeiro exercício"
+        android:text="@string/button_first_exercise"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,7 +20,7 @@
         android:id="@+id/appCompatButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Segundo exercício"
+        android:text="@string/button_second_exercise"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appCompatButton" />
@@ -30,7 +29,7 @@
         android:id="@+id/appCompatButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Terceiro exercício"
+        android:text="@string/button_third_exercise"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appCompatButton2" />
@@ -39,7 +38,7 @@
         android:id="@+id/appCompatButton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Quarto exercício"
+        android:text="@string/button_fourth_exercise"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appCompatButton3" />
