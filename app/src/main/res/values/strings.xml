@@ -2,4 +2,9 @@
     <string name="app_name">Projeto Mentoria</string>
     <string name="first_exercise_lifecycle">Estudando ciclos de vida</string>
     <string name="second_exercise_textView">Counter</string>
+    <string name="numberDefault">0</string>
+    <string name="button_third_exercise">Terceiro exercício</string>
+    <string name="button_first_exercise">Primeiro exercício</string>
+    <string name="button_second_exercise">Segundo exercício</string>
+    <string name="button_fourth_exercise">Quarto exercício</string>
 </resources>

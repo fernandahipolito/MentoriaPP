@@ -22,6 +22,11 @@ class FirstExerciseActivity : AppCompatActivity() {
         Log.d("ActivityLifecycle", "App em OnResume")
     }
 
+    override fun onPause() {
+        super.onPause()
+        Log.d("ActivityLifecycle", "App em OnPause")
+    }
+
     override fun onStop() {
         super.onStop()
         Log.d("ActivityLifecycle", "App em OnStop")

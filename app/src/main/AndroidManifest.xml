@@ -23,6 +23,9 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".fourthexercise.FourthExerciseActivity"
+            android:exported="false" />
+        <activity
             android:name=".thirdexercise.ThirdExerciseActivity"
             android:exported="false" />
 

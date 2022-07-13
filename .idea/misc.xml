@@ -5,9 +5,13 @@
       <map>
         <entry key="../../Library/Android/sdk/platforms/android-32/android.jar!/res/layout-car-v8/car_alert_dialog_button_bar.xml" value="0.20108695652173914" />
         <entry key="app/src/main/res/layout/activity_first_exercise.xml" value="0.1890625" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.175" />
+        <entry key="app/src/main/res/layout/activity_fourth_exercise.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_second_exercise.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_third_exercise.xml" value="0.18802083333333333" />
+        <entry key="app/src/main/res/layout/first_fragment_layout.xml" value="0.17135416666666667" />
+        <entry key="app/src/main/res/layout/fragmant_button.xml" value="0.18541666666666667" />
+        <entry key="app/src/main/res/layout/fragment_text.xml" value="0.165" />
       </map>
     </option>
   </component>

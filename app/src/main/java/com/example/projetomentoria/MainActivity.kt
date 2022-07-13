@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.projetomentoria.databinding.ActivityMainBinding
 import com.example.projetomentoria.exerciseone.FirstExerciseActivity
+import com.example.projetomentoria.fourthexercise.FourthExerciseActivity
 import com.example.projetomentoria.secondexercise.SecondExerciseActivity
 import com.example.projetomentoria.thirdexercise.ThirdExerciseActivity
 
@@ -31,6 +32,11 @@ class MainActivity : AppCompatActivity() {
         binding.appCompatButton3.setOnClickListener {
             val intent3 = Intent(this,ThirdExerciseActivity::class.java)
             startActivity(intent3)
+        }
+
+        binding.appCompatButton4.setOnClickListener {
+            val intent4 = Intent(this,FourthExerciseActivity::class.java)
+            startActivity(intent4)
         }
     }
 }
