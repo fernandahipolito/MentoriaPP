@@ -1,34 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container_four_exercise"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".fourthexercise.FourthExerciseActivity">
 
-    <androidx.fragment.app.FragmentContainerView
+    <fragment
         android:id="@+id/fragment_container_text"
-        android:name="com.example.projetomentoria.fourthexercise.TextFragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        class="com.example.projetomentoria.fourthexercise.TextFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
-    <androidx.fragment.app.FragmentContainerView
+    <fragment
         android:id="@+id/fragment_container_button"
-        android:name="com.example.projetomentoria.fourthexercise.ButtonFragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fragment_container_text" />
+        class="com.example.projetomentoria.fourthexercise.ButtonFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
